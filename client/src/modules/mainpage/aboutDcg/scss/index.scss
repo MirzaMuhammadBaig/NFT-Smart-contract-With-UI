@@ -1,0 +1,205 @@
+@import "../../../../theme/index.scss";
+.mainDVG_Div {
+  width: 100%;
+  background-image: url("../../../../assets/images/bgsecond.jpg");
+  height: auto;
+}
+
+.mainSection_aboutDCG {
+  width: 100%;
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .nested_aboutDCG {
+    width: 80%;
+    font-family: $fontFamily;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto 0px;
+    .nestedSection {
+      width: 60%;
+
+      .heading {
+        h2 {
+          color: #8eacff;
+          font-family: $fontFamily;
+          font-size: 28px;
+          font-weight: 500;
+          font-style: normal;
+          text-decoration: none;
+          line-height: 4em;
+          letter-spacing: 0px;
+        }
+        h1 {
+          color: #ffffff;
+          font-size: 60px;
+          font-weight: 700;
+          font-style: normal;
+          text-decoration: none;
+          line-height: 1.2em;
+          letter-spacing: 0px;
+        }
+        h5 {
+          color: #ffffff;
+          font-size: 24px;
+          font-weight: 600;
+          margin: 0px -5px 0px 0px;
+          padding: 0px 0px 35px 0px;
+        }
+        
+      }
+      .description {
+        p {
+          text-align: left;
+          color: #ffffff;
+          font-family: $fontFamily;
+          font-size: 18px;
+          font-weight: 500;
+          font-style: normal;
+          line-height: 1.7em;
+          letter-spacing: 0px;
+        }
+        ul {
+          padding-left: 20px;
+          li {
+            list-style-type: circle;
+            text-align: left;
+            color: #ffffff;
+            font-family: $fontFamily;
+            font-size: 18px;
+            font-weight: 500;
+            font-style: normal;
+            line-height: 1.7em;
+            letter-spacing: 0px;
+          }
+        }
+      }
+      @media (max-width:995px) {
+        .heading{
+          h1{
+            font-size: 38px;
+          }
+        }
+      }
+      @media (max-width:768px) {
+        width: 95%;
+      }
+      @media (max-width:425px) {
+        width: 100%;
+        .heading{
+        h1{
+          font-size: 28px;
+        }
+        h5{
+          font-size: 18px;
+        }
+      }  
+    }
+    }
+
+    .nesteSection_two {
+      width: 30%;
+      .gif_logo {
+        img {
+          width: 380px;
+        }
+      }
+      .timer {
+        // margin: -107px 0px 0px 0px;
+        margin-top: -40px;
+        padding: 12px;
+        background-color: #ffffff4d;
+        border-style: solid;
+        border-width: 1px 1px 1px 1px;
+        border-color: #ffffff;
+        border-radius: 20px 20px 20px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 14px;
+        p {
+          font-size: 18px;
+        }
+      }
+      .content_Box {
+        background-color: #8c7caa;
+        border-radius: 20px 20px 20px 20px;
+        border-style: solid;
+        border-width: 1px 1px 1px 1px;
+        border-color: #ffffff;
+        transition: background 0.3s, border 0.3s, border-radius 0.3s,
+          box-shadow 0.3s;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        padding: 30px 30px 30px 30px;
+        h1 {
+          color: #ffffff;
+          font-size: 28px;
+          font-weight: 700;
+          font-style: normal;
+          text-decoration: none;
+          line-height: 1em;
+          letter-spacing: 0px;
+          font-family: $fontFamily;
+
+          text-align: center;
+        }
+        p {
+          font-size: 16px;
+          // font-weight: 700;
+          font-style: normal;
+          text-decoration: none;
+          // line-height: 1em;
+          // letter-spacing: 0px;
+          color: #ffffff;
+          font-family: $fontFamily;
+        }
+        .price_eth {
+          color: #ffffff;
+          font-size: 20px;
+          font-weight: 400;
+          letter-spacing: 0px;
+          font-family: $fontFamily;
+
+        }
+        button{
+          font-family: $fontFamily;
+          font-size: 18px;
+          font-weight: 500;
+          font-style: normal;
+          text-decoration: none;
+          // line-height: 1em;
+          // letter-spacing: 0px;
+          background-color: #202443;
+          border-radius: 20px 20px 20px 20px;
+          padding: 14px;
+          color: #ffffff;
+          width: 160px;
+        }
+
+      }
+      @media (max-width:768px) {
+        width: 95%;
+        .gif_logo{
+          img{
+            margin: 0 auto;
+          }
+        }
+      }
+      @media (max-width:425px) {
+        width: 100%;
+      }
+    }
+
+   @media (max-width:1024px) {
+      width: 90%;  
+   }
+   @media (max-width:768px) {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    width: 90%;
+    margin: 4px auto 0px;
+ }
+  }
+}

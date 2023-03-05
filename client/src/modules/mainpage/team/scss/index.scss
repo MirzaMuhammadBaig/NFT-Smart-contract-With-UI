@@ -1,0 +1,68 @@
+@import "../../../../theme/index.scss";
+
+.team_section {
+  .nested_section {
+    width: 80%;
+    margin: 0 auto;
+    .team_sectionone {
+      h1 {
+        color: #ffffff;
+        font-family: $fontFamily;
+        font-size: 36px;
+        font-weight: 700;
+        font-style: normal;
+        text-decoration: none;
+        line-height: 1.3em;
+        letter-spacing: 0px;
+      }
+      p {
+        color: #ffffff;
+        font-family: $fontFamily;
+        font-size: 16px;
+        font-weight: 400;
+        font-style: normal;
+        text-decoration: none;
+        line-height: 2em;
+        letter-spacing: 0px;
+      }
+      .team_member {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 12px;
+        .childTeam {
+          padding: 30px 30px 30px 30px;
+          background-color: #1e2243;
+          border-radius: 20px 20px 20px 20px;
+          box-shadow: 0px 4px 4px 0px rgba(25.999999999999996, 25, 39, 0.25);
+          transition: background 0.3s, border 0.3s, border-radius 0.3s,
+            box-shadow 0.3s,
+            transform var(--e-transform-transition-duration, 0.4s);
+          .teammemeber {
+            img {
+              width: 60px;
+              border-radius: 50%;
+            }
+            div {
+              p {
+                line-height: 1.2em;
+              }
+              :last-child {
+                color: #4f7dfd;
+                font-size: 14px;
+                font-weight: 700;
+                font-style: normal;
+                text-decoration: none;
+                font-family: $fontFamily;
+
+              }
+
+            }
+          }
+        }
+      }
+    }
+    @media (max-width:995px) {
+        width: 90%; 
+      }
+  }
+}

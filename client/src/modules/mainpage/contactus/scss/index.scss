@@ -1,0 +1,168 @@
+@import "../../../../theme/index.scss";
+
+.contactus_section {
+  background-image: url("../../../../assets/images/gradientbg.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  padding: 65px;
+  border-radius: 20px 20px 20px 20px;
+  .nested_section {
+    width: 80%;
+    margin: 0 auto;
+    .content_contact {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      .contact_data {
+        h1 {
+          color: #ffffff;
+          font-size: 48px;
+          font-family: $fontFamily;
+          font-weight: 700;
+          font-style: normal;
+          text-decoration: none;
+          line-height: 1.2em;
+          letter-spacing: 0px;
+        }
+        p {
+          color: #ffffff;
+          font-family: $fontFamily;
+          font-size: 18px;
+          font-weight: 500;
+          font-style: normal;
+          text-decoration: none;
+          line-height: 1.5em;
+          letter-spacing: 0px;
+          padding: 10px 0px;
+        }
+        button {
+          cursor: pointer;
+          border: 0;
+          border-radius: 28px;
+          font-weight: 600;
+          // margin: 0 10px;
+          width: 160px;
+          font-family: $fontFamily;
+          padding: 14px 18px;
+          box-shadow: 0 0 20px rgba(104, 85, 224, 0.2);
+          transition: 0.4s;
+          letter-spacing: -0.03px;
+          font-size: 18px;
+          color: rgb(104, 85, 224);
+          background-color: rgba(255, 255, 255, 1);
+          border: 1px solid rgba(104, 85, 224, 1);
+          &:hover {
+            color: white;
+            box-shadow: 0 0 20px rgba(104, 85, 224, 0.6);
+            background-color: rgba(104, 85, 224, 1);
+          }
+        }
+        @media (max-width: 1024px) {
+          h1 {
+            font-size: 32px;
+          }
+        }
+        @media (max-width: 425px) {
+          h1 {
+            font-size: 24px;
+          }
+        }
+      }
+
+      @media (max-width: 768px) {
+        flex-direction: column-reverse;
+      }
+    }
+
+    .form {
+      .heading_form {
+        color: #ffffff;
+        font-size: 48px;
+        font-family: $fontFamily;
+        font-weight: 700;
+        font-style: normal;
+        text-decoration: none;
+        line-height: 1.2em;
+        letter-spacing: 0px;
+        border-bottom: 1px solid #8706e1;
+      }
+      ul {
+        width: 100%;
+        color: #ffffff;
+        font-family: $fontFamily;
+
+        li {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          padding: 4px 0px;
+          font-size: 18px;
+        }
+      }
+      .form_input {
+        width: 100%;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        padding: 12px;
+        margin-top: 18px;
+        label {
+          display: block;
+          color: white;
+          font-size: 18px;
+          padding: 10px 0px;
+        }
+        input,
+        textarea {
+          width: 100%;
+          padding: 14px;
+          border-radius: 28px;
+         &:focus{
+          outline: none;
+          border: none;
+         }
+        }
+        button{
+          cursor: pointer;
+          border: 0;
+          border-radius: 28px;
+          font-weight: 600;
+          width: 100%;
+         font-family: $fontFamily;
+         padding: 14px 18px;
+         box-shadow: 0 0 20px rgba(104, 85, 224, 0.2);
+         transition: 0.4s;
+         letter-spacing: -0.03px;
+         font-size: 18px;
+         color: rgb(104, 85, 224);
+         background-color: rgba(255, 255, 255, 1);
+         border: 1px solid rgba(104, 85, 224, 1);
+         &:hover {
+         color: white;
+         box-shadow: 0 0 20px rgba(104, 85, 224, 0.6);
+        background-color: rgba(104, 85, 224, 1);
+       }
+        }
+      }
+    }
+
+    @media (max-width: 1024px) {
+      width: 90%;
+    }
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+  @media (max-width: 768px) {
+    padding: 45px;
+  }
+  @media (max-width: 425px) {
+    padding: 25px;
+  }
+}

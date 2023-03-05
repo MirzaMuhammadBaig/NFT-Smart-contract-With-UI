@@ -1,0 +1,49 @@
+@import "../../../theme/index.scss";
+.footer_section {
+  height: 70px;
+  background-color: #1d0545;
+  .nested_footer {
+    width: 80%;
+    margin: 0 auto;
+    height: 100%;
+    color: white;
+    font-family: $fontFamily;
+   h1{
+    color: #ffffff;
+    font-family: $fontFamily;
+     text-align: center; 
+    font-size: 18px;
+    font-weight: 500;
+    font-style: normal;
+    text-decoration: none;
+    line-height: 1em;
+    letter-spacing: 0px;
+    font-weight: 600;
+    padding: 14px 0px;
+   }
+   @media (max-width:768px) {
+    width: 90%;
+   }
+   @media (max-width:425px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    .links{
+      font-size: 12px;
+      margin: 10px 0px;
+
+    }
+    .social_links{
+      width: 80%;
+      margin: 10px 0px;
+  
+      ul{
+        justify-content: space-between;
+      }
+     }
+   }
+   
+  }
+@media (max-width:425px) {
+  height: auto;
+}
+}
